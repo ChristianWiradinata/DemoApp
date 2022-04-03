@@ -102,7 +102,7 @@
 		AA551D3127F1913A009E8F9B /* demoPorject */ = {
 			isa = PBXGroup;
 			children = (
-				AAC4838F27F6B49100FB527F /* KiniCintaku */,
+				AAC4838F27F6B49100FB527F /* ExpandTable */,
 				AABC31A927F3E6E700CE77C2 /* CaraBayar */,
 				AA551D4627F19143009E8F9B /* ProfilePage */,
 				AA551D3227F1913A009E8F9B /* AppDelegate.swift */,
@@ -154,7 +154,7 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		AAC4838F27F6B49100FB527F /* KiniCintaku */ = {
+		AAC4838F27F6B49100FB527F /* ExpandTable */ = {
 			isa = PBXGroup;
 			children = (
 				AAC4839027F6B4AD00FB527F /* TheViewController.swift */,
@@ -162,7 +162,7 @@
 				AAC4839C27F6BC6100FB527F /* Cell */,
 				AAC4839B27F6BC5500FB527F /* Model */,
 			);
-			path = KiniCintaku;
+			path = ExpandTable;
 			sourceTree = "<group>";
 		};
 		AAC4839B27F6BC5500FB527F /* Model */ = {
