@@ -7,7 +7,7 @@
 
 import Foundation
 
-class KiniCintakuModel{
+class DataModel{
     let title: String
     let footer: String
     var extendedModel: [ExtendedModel]?

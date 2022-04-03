@@ -1,5 +1,5 @@
 //
-//  KiniCintakuTableViewCell.swift
+//  TheTableViewCell.swift
 //  demoPorject
 //
 //  Created by Christian Wiradinata on 01/04/22.
@@ -7,18 +7,18 @@
 
 import UIKit
 
-protocol KiniCintakuTableViewCellDelegate:NSObjectProtocol{
+protocol TableViewCellDelegate:NSObjectProtocol{
     func buttonClicked()
 }
 
 @available(iOS 13.0, *)
-class KiniCintakuTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+class TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var Header: UILabel!
     @IBOutlet weak var Footer: UILabel!
     @IBOutlet weak var Expand_Height: NSLayoutConstraint!
     @IBOutlet weak var cv: UICollectionView!
-    weak var delegate:KiniCintakuTableViewCellDelegate?
+    weak var delegate: TableViewCellDelegate?
     var CellIndex: IndexPath?
     
     override func awakeFromNib() {
@@ -31,11 +31,11 @@ class KiniCintakuTableViewCell: UITableViewCell, UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return kiniCintaku[CellIndex!.row].extendedModel!.count
+        return dataModel[CellIndex!.row].extendedModel!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KiniCintakuCollectionViewCell", for: indexPath) as! KiniCintakuCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
         //MARK: - Calculation
         
@@ -45,15 +45,15 @@ class KiniCintakuTableViewCell: UITableViewCell, UICollectionViewDataSource, UIC
         cell.delegate = self
         
         //MARK: - CUSTOM THE CELL
-        if kiniCintaku[CellIndex!.row].extendedModel!.count == 1 {
+        if dataModel[CellIndex!.row].extendedModel!.count == 1 {
             cell.Screen_Width.constant = self.contentView.frame.width
         } else {
             cell.Screen_Width.constant = self.contentView.frame.width / 2 - 20
         }
-        cell.Title.text = kiniCintaku[CellIndex!.row].extendedModel?[indexPath.row].title
-        cell.Subtitle.text = kiniCintaku[CellIndex!.row].extendedModel?[indexPath.row].subTitle
+        cell.Title.text = dataModel[CellIndex!.row].extendedModel?[indexPath.row].title
+        cell.Subtitle.text = dataModel[CellIndex!.row].extendedModel?[indexPath.row].subTitle
         
-        if kiniCintaku[CellIndex?.row ?? 0].extendedModel![indexPath.row].status {
+        if dataModel[CellIndex?.row ?? 0].extendedModel![indexPath.row].status {
             cell.Button.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
         } else {
             cell.Button.setImage(UIImage(systemName: "square"), for: .normal)
@@ -63,14 +63,14 @@ class KiniCintakuTableViewCell: UITableViewCell, UICollectionViewDataSource, UIC
     }
     
     private func setup() {
-        cv.register(UINib(nibName: "KiniCintakuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KiniCintakuCollectionViewCell")
+        cv.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
         cv.dataSource = self
         cv.delegate = self
     }
 }
 
 @available(iOS 13.0, *)
-extension KiniCintakuTableViewCell: KiniCintakuCollectionViewCellDelegate{
+extension TableViewCell: CollectionViewCellDelegate{
     func buttonClicked() {
         if let delegate = self.delegate{
             delegate.buttonClicked()

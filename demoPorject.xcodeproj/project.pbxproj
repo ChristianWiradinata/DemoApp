@@ -22,13 +22,13 @@
 		AABC31BC27F5BB6800CE77C2 /* MetodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC31BA27F5BB6800CE77C2 /* MetodeCell.swift */; };
 		AABC31BD27F5BB6800CE77C2 /* MetodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABC31BB27F5BB6800CE77C2 /* MetodeCell.xib */; };
 		AABC31C027F5BD0700CE77C2 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC31BF27F5BD0700CE77C2 /* PaymentModel.swift */; };
-		AAC4839227F6B4AD00FB527F /* KiniCintakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4839027F6B4AD00FB527F /* KiniCintakuViewController.swift */; };
-		AAC4839327F6B4AD00FB527F /* KiniCintakuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC4839127F6B4AD00FB527F /* KiniCintakuViewController.xib */; };
-		AAC4839A27F6BB0200FB527F /* KiniCintakuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4839927F6BB0200FB527F /* KiniCintakuModel.swift */; };
-		AAC4839F27F6F19700FB527F /* KiniCintakuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4839D27F6F19700FB527F /* KiniCintakuCollectionViewCell.swift */; };
-		AAC483A027F6F19700FB527F /* KiniCintakuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC4839E27F6F19700FB527F /* KiniCintakuCollectionViewCell.xib */; };
-		AAC483A527F6F26200FB527F /* KiniCintakuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC483A327F6F26200FB527F /* KiniCintakuTableViewCell.swift */; };
-		AAC483A627F6F26200FB527F /* KiniCintakuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC483A427F6F26200FB527F /* KiniCintakuTableViewCell.xib */; };
+		AAC4839227F6B4AD00FB527F /* TheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4839027F6B4AD00FB527F /* TheViewController.swift */; };
+		AAC4839327F6B4AD00FB527F /* TheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC4839127F6B4AD00FB527F /* TheViewController.xib */; };
+		AAC4839A27F6BB0200FB527F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4839927F6BB0200FB527F /* DataModel.swift */; };
+		AAC4839F27F6F19700FB527F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4839D27F6F19700FB527F /* CollectionViewCell.swift */; };
+		AAC483A027F6F19700FB527F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC4839E27F6F19700FB527F /* CollectionViewCell.xib */; };
+		AAC483A527F6F26200FB527F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC483A327F6F26200FB527F /* TableViewCell.swift */; };
+		AAC483A627F6F26200FB527F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC483A427F6F26200FB527F /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,13 +50,13 @@
 		AABC31BA27F5BB6800CE77C2 /* MetodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetodeCell.swift; sourceTree = "<group>"; };
 		AABC31BB27F5BB6800CE77C2 /* MetodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetodeCell.xib; sourceTree = "<group>"; };
 		AABC31BF27F5BD0700CE77C2 /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
-		AAC4839027F6B4AD00FB527F /* KiniCintakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiniCintakuViewController.swift; sourceTree = "<group>"; };
-		AAC4839127F6B4AD00FB527F /* KiniCintakuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KiniCintakuViewController.xib; sourceTree = "<group>"; };
-		AAC4839927F6BB0200FB527F /* KiniCintakuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiniCintakuModel.swift; sourceTree = "<group>"; };
-		AAC4839D27F6F19700FB527F /* KiniCintakuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiniCintakuCollectionViewCell.swift; sourceTree = "<group>"; };
-		AAC4839E27F6F19700FB527F /* KiniCintakuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KiniCintakuCollectionViewCell.xib; sourceTree = "<group>"; };
-		AAC483A327F6F26200FB527F /* KiniCintakuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiniCintakuTableViewCell.swift; sourceTree = "<group>"; };
-		AAC483A427F6F26200FB527F /* KiniCintakuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KiniCintakuTableViewCell.xib; sourceTree = "<group>"; };
+		AAC4839027F6B4AD00FB527F /* TheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheViewController.swift; sourceTree = "<group>"; };
+		AAC4839127F6B4AD00FB527F /* TheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheViewController.xib; sourceTree = "<group>"; };
+		AAC4839927F6BB0200FB527F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		AAC4839D27F6F19700FB527F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AAC4839E27F6F19700FB527F /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		AAC483A327F6F26200FB527F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		AAC483A427F6F26200FB527F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		D038EF4096A7AD8640F935EE /* Pods-demoPorject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoPorject.release.xcconfig"; path = "Target Support Files/Pods-demoPorject/Pods-demoPorject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,8 +157,8 @@
 		AAC4838F27F6B49100FB527F /* KiniCintaku */ = {
 			isa = PBXGroup;
 			children = (
-				AAC4839027F6B4AD00FB527F /* KiniCintakuViewController.swift */,
-				AAC4839127F6B4AD00FB527F /* KiniCintakuViewController.xib */,
+				AAC4839027F6B4AD00FB527F /* TheViewController.swift */,
+				AAC4839127F6B4AD00FB527F /* TheViewController.xib */,
 				AAC4839C27F6BC6100FB527F /* Cell */,
 				AAC4839B27F6BC5500FB527F /* Model */,
 			);
@@ -168,7 +168,7 @@
 		AAC4839B27F6BC5500FB527F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AAC4839927F6BB0200FB527F /* KiniCintakuModel.swift */,
+				AAC4839927F6BB0200FB527F /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,8 +185,8 @@
 		AAC483A127F6F1A600FB527F /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				AAC4839D27F6F19700FB527F /* KiniCintakuCollectionViewCell.swift */,
-				AAC4839E27F6F19700FB527F /* KiniCintakuCollectionViewCell.xib */,
+				AAC4839D27F6F19700FB527F /* CollectionViewCell.swift */,
+				AAC4839E27F6F19700FB527F /* CollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 		AAC483A227F6F25200FB527F /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				AAC483A327F6F26200FB527F /* KiniCintakuTableViewCell.swift */,
-				AAC483A427F6F26200FB527F /* KiniCintakuTableViewCell.xib */,
+				AAC483A327F6F26200FB527F /* TableViewCell.swift */,
+				AAC483A427F6F26200FB527F /* TableViewCell.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -271,10 +271,10 @@
 				AA551D3F27F1913B009E8F9B /* LaunchScreen.storyboard in Resources */,
 				AA551D3C27F1913B009E8F9B /* Assets.xcassets in Resources */,
 				AA551D3A27F1913A009E8F9B /* Main.storyboard in Resources */,
-				AAC4839327F6B4AD00FB527F /* KiniCintakuViewController.xib in Resources */,
+				AAC4839327F6B4AD00FB527F /* TheViewController.xib in Resources */,
 				AABC31AD27F3E70400CE77C2 /* CaraBayarViewController.xib in Resources */,
-				AAC483A627F6F26200FB527F /* KiniCintakuTableViewCell.xib in Resources */,
-				AAC483A027F6F19700FB527F /* KiniCintakuCollectionViewCell.xib in Resources */,
+				AAC483A627F6F26200FB527F /* TableViewCell.xib in Resources */,
+				AAC483A027F6F19700FB527F /* CollectionViewCell.xib in Resources */,
 				AABC31A827F1BB2400CE77C2 /* ProfilePageViewController.xib in Resources */,
 				AABC31BD27F5BB6800CE77C2 /* MetodeCell.xib in Resources */,
 			);
@@ -330,16 +330,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AABC31A727F1BB2400CE77C2 /* ProfilePageViewController.swift in Sources */,
-				AAC4839A27F6BB0200FB527F /* KiniCintakuModel.swift in Sources */,
+				AAC4839A27F6BB0200FB527F /* DataModel.swift in Sources */,
 				AA551D3727F1913A009E8F9B /* ViewController.swift in Sources */,
 				AA551D3327F1913A009E8F9B /* AppDelegate.swift in Sources */,
 				AABC31BC27F5BB6800CE77C2 /* MetodeCell.swift in Sources */,
-				AAC483A527F6F26200FB527F /* KiniCintakuTableViewCell.swift in Sources */,
+				AAC483A527F6F26200FB527F /* TableViewCell.swift in Sources */,
 				AABC31AC27F3E70400CE77C2 /* CaraBayarViewController.swift in Sources */,
 				AA551D3527F1913A009E8F9B /* SceneDelegate.swift in Sources */,
-				AAC4839F27F6F19700FB527F /* KiniCintakuCollectionViewCell.swift in Sources */,
+				AAC4839F27F6F19700FB527F /* CollectionViewCell.swift in Sources */,
 				AA551D4A27F191C8009E8F9B /* Function.swift in Sources */,
-				AAC4839227F6B4AD00FB527F /* KiniCintakuViewController.swift in Sources */,
+				AAC4839227F6B4AD00FB527F /* TheViewController.swift in Sources */,
 				AABC31C027F5BD0700CE77C2 /* PaymentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

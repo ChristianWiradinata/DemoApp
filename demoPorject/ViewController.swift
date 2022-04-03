@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         startAnimation()
         stopAnimation()
         
-        gotoKiniCintaku(self: self)
+        gotoExpandTable(self: self)
     }
     
     private func setting() {

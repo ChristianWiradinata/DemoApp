@@ -10,7 +10,7 @@ import UIKit
 
 //MARK: - Global variable
 var animation = false
-var kiniCintaku = [KiniCintakuModel]()
+var dataModel = [DataModel]()
 
 //MARK: - GO TO VIEW CONTROLLER
 func back(vc: UIViewController) {
@@ -30,8 +30,8 @@ func gotoCaraBayarPage(self: UIViewController) {
 }
 
 @available(iOS 13.0, *)
-func gotoKiniCintaku(self: UIViewController) {
-    let goto = KiniCintakuViewController(nibName: "KiniCintakuViewController", bundle: nil)
+func gotoExpandTable(self: UIViewController) {
+    let goto = TheViewController(nibName: "TheViewController", bundle: nil)
     self.view.addSubview(goto.view)
     self.addChild(goto)
 }
