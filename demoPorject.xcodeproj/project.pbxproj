@@ -29,12 +29,6 @@
 		AAC483A027F6F19700FB527F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC4839E27F6F19700FB527F /* CollectionViewCell.xib */; };
 		AAC483A527F6F26200FB527F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC483A327F6F26200FB527F /* TableViewCell.swift */; };
 		AAC483A627F6F26200FB527F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC483A427F6F26200FB527F /* TableViewCell.xib */; };
-		AAC483A927FA900100FB527F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC483A727FA900100FB527F /* DetailViewController.swift */; };
-		AAC483AA27FA900100FB527F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC483A827FA900100FB527F /* DetailViewController.xib */; };
-		AAC483B027FC1B6400FB527F /* MetodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC483AE27FC1B6400FB527F /* MetodeCollectionViewCell.swift */; };
-		AAC483B127FC1B6400FB527F /* MetodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC483AF27FC1B6400FB527F /* MetodeCollectionViewCell.xib */; };
-		AAC483B427FC36AD00FB527F /* PanduanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC483B227FC36AD00FB527F /* PanduanTableViewCell.swift */; };
-		AAC483B527FC36AD00FB527F /* PanduanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC483B327FC36AD00FB527F /* PanduanTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,12 +57,6 @@
 		AAC4839E27F6F19700FB527F /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		AAC483A327F6F26200FB527F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		AAC483A427F6F26200FB527F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		AAC483A727FA900100FB527F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		AAC483A827FA900100FB527F /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		AAC483AE27FC1B6400FB527F /* MetodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetodeCollectionViewCell.swift; sourceTree = "<group>"; };
-		AAC483AF27FC1B6400FB527F /* MetodeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetodeCollectionViewCell.xib; sourceTree = "<group>"; };
-		AAC483B227FC36AD00FB527F /* PanduanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanduanTableViewCell.swift; sourceTree = "<group>"; };
-		AAC483B327FC36AD00FB527F /* PanduanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanduanTableViewCell.xib; sourceTree = "<group>"; };
 		D038EF4096A7AD8640F935EE /* Pods-demoPorject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoPorject.release.xcconfig"; path = "Target Support Files/Pods-demoPorject/Pods-demoPorject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +133,6 @@
 				AABC31AB27F3E70400CE77C2 /* CaraBayarViewController.xib */,
 				AABC31BE27F5BB9C00CE77C2 /* Cell */,
 				AABC31B927F5BA8D00CE77C2 /* Model */,
-				AAC483AB27FC1B2300FB527F /* ViewController */,
 			);
 			path = CaraBayar;
 			sourceTree = "<group>";
@@ -163,10 +150,6 @@
 			children = (
 				AABC31BA27F5BB6800CE77C2 /* MetodeCell.swift */,
 				AABC31BB27F5BB6800CE77C2 /* MetodeCell.xib */,
-				AAC483AE27FC1B6400FB527F /* MetodeCollectionViewCell.swift */,
-				AAC483AF27FC1B6400FB527F /* MetodeCollectionViewCell.xib */,
-				AAC483B227FC36AD00FB527F /* PanduanTableViewCell.swift */,
-				AAC483B327FC36AD00FB527F /* PanduanTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -215,15 +198,6 @@
 				AAC483A427F6F26200FB527F /* TableViewCell.xib */,
 			);
 			path = TableView;
-			sourceTree = "<group>";
-		};
-		AAC483AB27FC1B2300FB527F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				AAC483A727FA900100FB527F /* DetailViewController.swift */,
-				AAC483A827FA900100FB527F /* DetailViewController.xib */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		BF0873A1885BF7D85838B99A /* Frameworks */ = {
@@ -297,13 +271,10 @@
 				AA551D3F27F1913B009E8F9B /* LaunchScreen.storyboard in Resources */,
 				AA551D3C27F1913B009E8F9B /* Assets.xcassets in Resources */,
 				AA551D3A27F1913A009E8F9B /* Main.storyboard in Resources */,
-				AAC483B527FC36AD00FB527F /* PanduanTableViewCell.xib in Resources */,
 				AAC4839327F6B4AD00FB527F /* TheViewController.xib in Resources */,
 				AABC31AD27F3E70400CE77C2 /* CaraBayarViewController.xib in Resources */,
 				AAC483A627F6F26200FB527F /* TableViewCell.xib in Resources */,
-				AAC483B127FC1B6400FB527F /* MetodeCollectionViewCell.xib in Resources */,
 				AAC483A027F6F19700FB527F /* CollectionViewCell.xib in Resources */,
-				AAC483AA27FA900100FB527F /* DetailViewController.xib in Resources */,
 				AABC31A827F1BB2400CE77C2 /* ProfilePageViewController.xib in Resources */,
 				AABC31BD27F5BB6800CE77C2 /* MetodeCell.xib in Resources */,
 			);
@@ -358,16 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAC483A927FA900100FB527F /* DetailViewController.swift in Sources */,
 				AABC31A727F1BB2400CE77C2 /* ProfilePageViewController.swift in Sources */,
 				AAC4839A27F6BB0200FB527F /* DataModel.swift in Sources */,
 				AA551D3727F1913A009E8F9B /* ViewController.swift in Sources */,
 				AA551D3327F1913A009E8F9B /* AppDelegate.swift in Sources */,
 				AABC31BC27F5BB6800CE77C2 /* MetodeCell.swift in Sources */,
-				AAC483B027FC1B6400FB527F /* MetodeCollectionViewCell.swift in Sources */,
 				AAC483A527F6F26200FB527F /* TableViewCell.swift in Sources */,
 				AABC31AC27F3E70400CE77C2 /* CaraBayarViewController.swift in Sources */,
-				AAC483B427FC36AD00FB527F /* PanduanTableViewCell.swift in Sources */,
 				AA551D3527F1913A009E8F9B /* SceneDelegate.swift in Sources */,
 				AAC4839F27F6F19700FB527F /* CollectionViewCell.swift in Sources */,
 				AA551D4A27F191C8009E8F9B /* Function.swift in Sources */,

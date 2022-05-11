@@ -32,16 +32,13 @@ class PaymentModel {
 class Method {
     let Jenis: String
     let Deskripsi: [String]
-    var isActive: Bool = false
     
     init(
         Jenis: String,
-        Deskripsi: [String],
-        isActive: Bool = false
+        Deskripsi: [String]
     ) {
         self.Jenis = Jenis
         self.Deskripsi = Deskripsi
-        self.isActive = isActive
     }
 }
 
