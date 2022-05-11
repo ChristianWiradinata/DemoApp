@@ -21,11 +21,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("This is View Controller")
 
-        setting()
-        setup()
-        startAnimation()
-        stopAnimation()
+//        setting()
+//        setup()
+//        startAnimation()
+//        stopAnimation()
         
+//        gotoCaraBayarPage(self: self)
         gotoExpandTable(self: self)
     }
     

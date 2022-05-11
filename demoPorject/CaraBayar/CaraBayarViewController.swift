@@ -25,8 +25,7 @@ class CaraBayarViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     private func style() {
-        //MARK: - Top UIView
-        Header_View.CornerShadow(corners: [.bottomLeft], color: UIColor.white.cgColor, height: 5, curve: 20, shaddow: 0.4)
+        Header_View.CornerShadow(corners: [.bottomLeft], color: UIColor.white.cgColor, height: 5, curve: 20, shaddow: 0.3)
     }
     
     private func setup() {
@@ -42,11 +41,8 @@ class CaraBayarViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MetodeCell", for: indexPath) as! MetodeCell
         
-//        print(indexPath)
-//        print("\(indexPath.section) \(indexPath.row)")
-        
+        //MARK: - Custom Cell
         let url = URL(string: "\(Metode[indexPath.row].Image)")
-        
         cell.ImageView!.kf.indicatorType = .activity
         cell.ImageView!.kf.setImage(
             with: url,
@@ -57,16 +53,30 @@ class CaraBayarViewController: UIViewController, UITableViewDelegate, UITableVie
             }
         )
         
-        cell.Title.text = "PEMBAYARAN MELALUI \(Metode[indexPath.row].Name)"
+        cell.Title.text = "Pembayaran Melalui \(Metode[indexPath.row].Name)"
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print(indexPath)
+        let VC = DetailViewController()
+        
+        //MARK: - Pass Variable
+        VC.row = indexPath.row
+        VC.Metode = self.Metode
+        
+        //MARK: - Style
+//        VC.StackView.removeArrangedSubview()
+//        VC.StackView.removeFromSuperview()
+        
+        //MARK: - Present Detail
+        VC.modalPresentationStyle = .fullScreen
+        DispatchQueue.main.async {
+            self.present(VC, animated: true, completion: nil)
+            
+        }
     }
-    
-    
     
     
     
@@ -90,7 +100,7 @@ class CaraBayarViewController: UIViewController, UITableViewDelegate, UITableVie
     
     private func setData() {
         Metode = [
-            PaymentModel(Image: "https://www.freepnglogos.com/uploads/logo-bca-png/bank-central-asia-logo-bank-central-asia-bca-format-cdr-png-gudril-1.png", Name: "BANK BCA", CodeBank: "28888", CodeBank_EXP: "28888", PaymentMethod: [
+            PaymentModel(Image: "https://www.freepnglogos.com/uploads/logo-bca-png/bank-central-asia-logo-bank-central-asia-bca-format-cdr-png-gudril-1.png", Name: "Bank BCA", CodeBank: "28888", CodeBank_EXP: "28888", PaymentMethod: [
                 Method(Jenis: "ATM", Deskripsi: [
                     "Input kartu ATM dan PIN anda",
                     "Pilih Menu Transaksi Lainnya",
@@ -105,9 +115,13 @@ class CaraBayarViewController: UIViewController, UITableViewDelegate, UITableVie
                 Method(Jenis: "Mobile Banking", Deskripsi: [
                     "Test 1",
                     "Test 2"
+                ]),
+                Method(Jenis: "E-Banking", Deskripsi: [
+                    "Test 3",
+                    "Test 24"
                 ])
             ]),
-            PaymentModel(Image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/ALFAMART_LOGO_BARU.png", Name: "ALFAMART", CodeBank: "28888", CodeBank_EXP: "28888", PaymentMethod: [
+            PaymentModel(Image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/ALFAMART_LOGO_BARU.png", Name: "Alfamart", CodeBank: "70014623", CodeBank_EXP: "7001462300", PaymentMethod: [
                 Method(Jenis: "", Deskripsi: [
                     "Input kartu ATM dan PIN Anda",
                     "Pilih Menu Transaksi Lainnya",
